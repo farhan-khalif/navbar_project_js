@@ -1,0 +1,231 @@
+ *{
+    margin: 0;
+    padding: 0;
+ }
+ body{
+    background-image: url(photos/back.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100%;
+ }
+ .header{
+  height: 100vh ;
+ }
+ /* styling navbar */
+ .navbar{
+    background-color:white;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-between;
+ }
+ /* styling navbar menu*/
+ .menu{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+ }
+ /* styling navbar li*/
+  li{
+    height: 3rem;
+    font-size: 1.7rem;
+    
+ }
+ /* styling navbar a*/
+ a{
+  width: 90%;
+  padding: 0 2rem;/*he padding for the left and right sides of the element is 2.5rem.*/
+  text-decoration: none;
+  color: black;
+ }
+ a:hover{
+    background-color: #f0f0f0;
+    color: blue;
+    border-radius: 25px;
+    padding: 10px 20px; /* Increase padding to make the background larger */
+ }
+  /* styling navbar log*/
+ .logo {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color:#0f368a;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    
+ }
+ /* styling navbar menu icon*/
+  .menu-icon {
+    display: none;
+  }
+  
+ /* Styling the banner container */
+.banner {
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  width: 80%;
+  margin: 100px auto;
+}
+
+/* Styling the heading */
+.banner h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+/* Styling the first paragraph */
+.banner p {
+  font-size: 1.4rem;
+  color: #555;
+  line-height: 1.6;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+/* Styling the last paragraph with a border */
+.Contact-us {
+  font-size: 1.2em;
+  padding: 10px;
+  border: 1px solid #007bff;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: left;
+}
+
+.Contact-us:hover {
+  background-color: #A5BFCC;
+  color: black;
+}
+
+/* general section styling */
+section {
+  width: 100%;              /* Ensures the section takes the full width */
+  height: 100vh;
+  padding-top: 10px;       /* Padding around the section */
+  text-align: center;       /* Centers the text inside the section */
+  background-color: #f4f4f4; /* Light background color for all sections */
+  box-sizing: border-box;   /* Ensures padding doesn't affect the total width */
+  margin-top: 30px;
+}
+/* Specific section styles */
+.about-section {
+  background-color: #f4f4f4;
+  font-size: 2rem;
+}
+
+.services-section {
+  background-color: #e9f7fe; /* Light blue for services */
+  font-size: 2rem;
+}
+
+.projects-section {
+  background-color: #f4e1d2; /* Light peach for projects */
+  font-size: 2rem;
+}
+
+.contact-section {
+  background-color: #d1f7d1; /* Light green for contact */
+  font-size: 2rem;
+}
+/* Footer styling */
+.footer {
+  background-color: #333;   /* Dark background for the footer */
+  color: white;             /* White text color */
+  text-align: center;       /* Center the text */
+  padding: 20px 0;          /* Padding for top and bottom */
+  width: 100%;              /* Full width */
+  bottom: 0;
+  margin-top: 20px;         /* Space from the content above */
+}
+/* Footer text styling */
+.footer p {
+  font-size: 2rem;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+/*dtyling the button*/
+.back-to-top {
+  background-color: #007bff; /* Blue background for the button */
+  color: white;              /* White text */
+  font-size: 1em;
+  padding: 10px 20px;        /* Padding for button size */
+  border: none;              /* No border */
+  border-radius: 5px;        /* Rounded corners */
+  cursor: pointer;  
+}
+.back-to-top:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+ /* Responsive design */
+ @media (max-width: 768px) {
+   .logo {
+      font-size: 1.9rem;
+      font-weight: bold;
+    }
+    .menu {
+      justify-content: flex-start;
+      height: 90vh;
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 55px;
+      right: 0px;
+      background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent */
+      backdrop-filter: blur(10px);
+      border-radius: 5px;
+      
+    }
+    li{
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+
+    .active {
+      display: flex;
+    }
+
+    .menu-icon {
+      display: block;
+      font-size: 2.5rem;
+      cursor: pointer;
+      padding-right: 2rem;
+    }
+   
+/*  the banner responsive*/
+     /* Styling the banner container */
+.banner {
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  width: 80%;
+  margin: 10px auto;
+}
+
+/* Styling the heading */
+.banner h1 {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+/* Styling the first paragraph */
+.banner p {
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.6;
+  text-align: left;
+  margin-bottom: 20px;
+}
+    
+  }
